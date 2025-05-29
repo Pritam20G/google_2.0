@@ -1,0 +1,185 @@
+body{
+	background: url('image.jpeg') no-repeat center center fixed;
+	background-size: cover;
+	background-color: black;
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background: linear-gradient(45deg, #333, #000);
+	text-align: left;
+	padding-left: 120px;
+	line-height: 60px;
+	color: white;
+	margin-top: -85vh;
+	font-family: 'Arial', sans-serif;
+	font-size: 1.8em;
+	box-shadow: 0 0px 20px white;
+	background: transparent;
+	backdrop-filter: blur(10px);
+}
+
+div.search-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+div.search-box input {
+	border-radius: 25px;
+	width: 350px;
+	height: 50px;
+	padding: 10px;
+	color: white;
+	background: rgba(0, 0, 0, 0.7);
+	border: none;
+	font-size: 1.2em;
+	box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+	transition: all 0.3s ease;
+/*	background: transparent;*/
+	backdrop-filter: blur(10px);
+}
+
+div.search-box input::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+div.search-box input:focus {
+	outline: none;
+	transform: scale(1.05);
+	box-shadow: 0 10px 35px rgba(0, 255, 255, 0.5);
+	border: 2px solid #00FFFF;
+}
+
+div.search-box button {
+	border-radius: 25px;
+	width: 180px;
+	height: 50px;
+	background: linear-gradient(45deg, #00b3b3, #00ffcc);
+	border: none;
+	color: white;
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+}
+
+div.search-box button:hover {
+	background: linear-gradient(45deg, #00cc99, #00b3b3);
+	transform: translateY(-5px);
+/*	transform: scale(1.1);*/
+	box-shadow: 0 10px 30px rgba(0, 255, 255, 0.5);
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: url('image.jpeg') no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+div.search-box select {
+	border-radius: 25px;
+	height: 50px;
+	padding: 10px;
+	font-size: 1.2em;
+	border: none;
+	background: transparent;
+	color: white;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+div.search-box select option{
+	color: black;
+}
+
+div.search-box select:focus {
+	outline: none;
+	box-shadow: 0 10px 35px rgba(0, 255, 255, 0.5);
+	border: 2px solid #00FFFF;
+}
+
+
+
+
+
+/* Base styles remain unchanged */
+
+/* Responsive Design */
+
+/* For small devices (phones) */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 1.5em;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    div.search-box {
+        width: 90%;
+    }
+
+    div.search-box input {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    div.search-box select, 
+    div.search-box button {
+        width: 80%;
+        font-size: 1em;
+        height: 45px;
+    }
+}
+
+/* For tablets (portrait and landscape) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        font-size: 1.7em;
+        padding-left: 50px;
+    }
+
+    div.search-box {
+        width: 80%;
+    }
+
+    div.search-box input {
+        width: 70%;
+        font-size: 1.1em;
+    }
+
+    div.search-box select,
+    div.search-box button {
+        width: 70%;
+        font-size: 1.1em;
+    }
+}
+
+/* For laptops and desktops */
+@media screen and (min-width: 1025px) {
+    header {
+        font-size: 2em;
+        padding-left: 100px;
+    }
+
+    div.search-box input {
+        width: 350px;
+    }
+
+    div.search-box select, 
+    div.search-box button {
+        width: 180px;
+    }
+}
