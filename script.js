@@ -17,8 +17,8 @@ function search(event) {
         case 'Youtube':
             url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
             break;
-        case 'DuckAi':
-            url = `https://duck.ai/chat?q=${encodeURIComponent(query)}`;
+        case 'Per':
+            url = `https://www.perplexity.ai/search/${encodeURIComponent(query)}`;
             break;
         case 'bing':
             url = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
