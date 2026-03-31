@@ -17,8 +17,8 @@ function search(event) {
         case 'Youtube':
             url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
             break;
-        case 'Hianime':
-            url = `https://hianime.se/search?keyword=${encodeURIComponent(query)}`;
+        case 'DuckAi':
+            url = `https://duck.ai/chat?input=${encodeURIComponent(query)}`;
             break;
         case 'bing':
             url = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
