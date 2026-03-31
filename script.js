@@ -18,7 +18,7 @@ function search(event) {
             url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
             break;
         case 'Hianime':
-            url = `https://hianime.sx/search?keyword=${encodeURIComponent(query)}`;
+            url = `https://hianime.se/search?keyword=${encodeURIComponent(query)}`;
             break;
         case 'bing':
             url = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
