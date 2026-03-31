@@ -18,7 +18,7 @@ function search(event) {
             url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
             break;
         case 'DuckAi':
-            url = `https://duck.ai/chat?input=${encodeURIComponent(query)}`;
+            url = `https://duck.ai/chat?q=${encodeURIComponent(query)}`;
             break;
         case 'bing':
             url = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
